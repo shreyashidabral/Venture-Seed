@@ -1,6 +1,8 @@
+import SearchForm from "@/components/SearchForm";
 import React from "react";
 
-const page = () => {
+const page = async ({searchParams}: {searchParams: Promise<{query? : string}>}) => {
+  const query = (await searchParams).query
   return (
     <>
       <section className="pink_container">
@@ -10,6 +12,8 @@ const page = () => {
         <p className="sub-heading !max-w-3xl">
           Submit Ideas, Vote on Pitches, and Get Noticed in Virtual Competitions
         </p>
+
+        <SearchForm query={query}/>
       </section>
     </>
   );
