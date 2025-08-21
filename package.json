@@ -28,7 +28,7 @@
     "markdown-it": "^14.1.0",
     "next": "^15.4.0-canary.114",
     "next-auth": "^5.0.0-beta.29",
-    "next-sanity": "^9.8.58-canary.0",
+    "next-sanity": "^10.0.13",
     "postcss": "^8.4.38",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
